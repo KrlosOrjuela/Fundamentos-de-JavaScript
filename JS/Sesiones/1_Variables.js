@@ -1,5 +1,6 @@
 
-/// Clase_1: Variables
+/// Clase_1 y 2: Variables y String
+console.log(' ---- Variables y String ----');
 
 /*
  * console.log =>
@@ -31,9 +32,6 @@ var apellido = 'Orjuela', apellido2 = 'Bohorquez';
   console.log('Hola, mi nombre es ' + nombre +  'y tengo ' + edad + ' años');
   edad = '28 años';
   console.log('Hola, mi nombre es ' + nombre +  'y tengo ' + edad);
-
-
-/// Clase_2: String
 
 /*
  * toUpperCase (transformar un String a mayúsculas)

@@ -1,6 +1,6 @@
 
 /// El alcance de las funciones
-
+console.log(' ---- El alcance de las funciones ---- ');
 /*
  * Si una variable no está definida dentro del cuerpo de una función hablamos de una variable global.
  * Por el contrario, una variable definida dentro de una función es una variable local.
@@ -9,12 +9,12 @@
 var nombre = 'Carlos'; // variable global
                       // En consola podemos acceder a esta variable local usuando: window.nombre
 
-function  ImprimirNombreEnMayusculas(){
+function  AlcanceFunciones_ImprimirNombreEnMayusculas(){
   nombre = nombre.toUpperCase(); // nombre = CARLOS
   console.log(nombre);
 }
 
-ImprimirNombreEnMayusculas();
+AlcanceFunciones_ImprimirNombreEnMayusculas();
 
 
 /*
@@ -22,22 +22,22 @@ ImprimirNombreEnMayusculas();
  * usamos parámetros en lugar de pasar directamente la variable
 */
 
-function  ImprimirNombreEnMayusculas(nom){ // nom = variable local (No existe para la consola)
+function  AlcanceFunciones_ImprimirNombreEnMayusculas(nom){ // nom = variable local (No existe para la consola)
   nom = nombre.toUpperCase(); // nom = CARLOS & nombre = Carlos
   console.log(nom);
 }
 
-ImprimirNombreEnMayusculas(nombre);
+AlcanceFunciones_ImprimirNombreEnMayusculas(nombre);
 
 
 /*
 * Es posible utilizar el mismo nombre para una variable global y
-* para el parámetro de una función con un alcance local. (No es recomendado, genera confusión)
+* para el parámetro de una función con un alcance local.
 */
 
-function  ImprimirNombreEnMayusculasAlterno(nombre){ // nombre = variable local (No existe para la consola)
+function  AlcanceFunciones_ImprimirNombreEnMayusculasAlterno(nombre){ // nombre = variable local (No existe para la consola)
  nombre = nombre.toUpperCase(); // nombre (local) = CARLOS & nombre (global) = Carlos
  console.log(nombre);
 }
 
-ImprimirNombreEnMayusculasAlterno(nombre);
+AlcanceFunciones_ImprimirNombreEnMayusculasAlterno(nombre);

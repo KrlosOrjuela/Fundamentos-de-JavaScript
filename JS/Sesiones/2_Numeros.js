@@ -1,6 +1,6 @@
 
 /// Clase_3: Numeros
-
+console.log(' ---- Numeros ----');
 /*
  * Operadores matemáticos:
   * suma ( + )
@@ -52,4 +52,4 @@ var valorTotal = parseFloat(valorTotalFrutasConDecimales);
 
 var porcionesXPizza = 8;
 var numeroPersonas = 2;
-var cantidadPizzasPorPersona = porcionesXPizza / numeroPersonas; 
+var cantidadPizzasPorPersona = porcionesXPizza / numeroPersonas;
